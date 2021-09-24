@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    box-sizing: border-box;
+    
+
+}
+.card-nav{
+    min-width:600px;
+    left:-100%;
+
+}
+.navbar-light .navbar-toggler{
+    border:none;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+.dropdown-toggle:focus{
+ color:black;
+ font-weight: bold;
+ border: 0;
+}
+.btn-check:focus+.btn, .btn:focus{
+    border:0;
+}
+.list-unstyled a{
+    text-decoration: none;
+    color:grey;
+    }
+    .list-unstyled a:hover{
+    text-decoration: underline;
+        }
+        .color-change{
+            position:relative;
+
+        }
+    #settings{
+        position:fixed;
+        right:0;
+        top:100px;
+        z-index: 1;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+
+    }
+    input[type="color"] {
+        -webkit-appearance: none;
+        border: none;
+        height: 32px;
+        width:100%;
+    }
+    input[type="color"]::-webkit-color-swatch-wrapper {
+        padding: 0;
+    }
+    input[type="color"]::-webkit-color-swatch {
+        border: none;
+        border-radius: 10px;
+    }
+    #rotate{
+        
+        right:0%;
+        animation-name:rotateIcon;
+        animation-iteration-count: infinite;
+        animation-duration:2s;
+       
+    }
+    #panel{
+        position: fixed;
+     right:-100%;
+     height:100%;
+     width:16rem;
+     z-index:1;
+     transition: all .2s ease-in-out;
+     overflow-y: scroll;
+    }
+    .color-btn{
+        width:100% !important;
+        border:0 !important;
+    }
+    
+    #color-btn-1{
+        color: #fff;
+    background-color: #0061f2;
+        background-image: linear-gradient(45deg,#0061f2,#6900c7);
+    }
+#color-btn-2{
+    color: #fff;
+    background-color: #1da1f5;
+    background-image: linear-gradient(45deg,#1da1f5,#8039da);
+}
+#color-btn-3{
+    color:#fff;
+    background-color: #f53b57;
+    background-image: linear-gradient( 45deg,#f53b57,#ff793f);
+        
+        
+        
+}
+#color-btn-4{
+    color: #fff;
+    background-color: #6eabc2;
+    background-image: linear-gradient(45deg,#6eabc2,#506c6a);
+}
+#color-btn-5{
+    color: #fff;
+    background-color: #06794f;
+    background-image: linear-gradient(45deg,#06794f,#0fa28b);
+
+
+
+}
+#color-btn-6{
+    background-color:rgba(128, 128, 128, 0.481);
+    color:black;
+}
+#color-btn-7{
+    background-color:rgba(128, 128, 128, 0.481);
+    color:black;
+}
+#primary-panel{
+    display:none;
+}
+#secondary-panel{
+    display:none;
+}
+
+.badge-clr{
+   color: #6900c7;
+   background-color: rgba(255, 255, 255, 0.59);
+}
+.page-btn{
+    background-color:#0061f2 !important;
+    border-color: #0061f2 !important;
+}
+#header{
+    background-color: #6900c7;
+    background-image: url(https://www.transparenttextures.com/patterns/inspiration-geometry.png);
+
+}
+.text-clr{
+  color:#0061f2;
+}
+#nav-img{
+    position:relative;
+    background-image: url('https://source.unsplash.com/jWQj5Wjepuk/400x300');
+    background-size: cover;
+
+
+}
+ #overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(45deg,#0061f2,#0061f28a);
+} 
+
+    footer li::marker{
+       color:white;
+    }
+
+   
+    .img{
+        padding:0;
+        margin:0;
+    }
+    .img svg{
+        fill:rgba(128, 128, 128, 0.527);
+       min-width:70%;
+    }
+    
+    .card-pic{
+        width:80px;
+        height:80px;
+        padding: 25px 0px 0px 25px;
+    }
+    .card-pic svg{
+        width:30px;
+        height:30px;
+        fill:#6900c7;
+          
+    }
+    .z-1{
+        position: relative;
+        z-index: 1;
+    }
+/* need */
+/* clip-path: polygon(0 23%, 100% 0%, 100% 77%, 0% 100%); */
+
+    @keyframes rotateIcon{
+        0%{
+            transform:rotate(180deg);
+        }
+        100%{
+            transform:rotate(360deg);
+    
+        }
+    }
+
+
+@media(max-width:1200px){
+    .navbar-nav .dropdown-menu{
+      position:absolute;
+      
+    }
+    .navbar-nav .card-nav{
+       min-width:200px;
+        left: 0;
+        right:0;
+    }
+    .nav-lists{
+        text-align: center;
+    }
+    
+  
+}
